@@ -46,11 +46,11 @@ C
 	  
       COMMON / Assessment / Bhat,Emsymin,Emsymax,Cutoff,FracMin,FracMax,
      +       Maxcatch,OFL,Pstar,OFLmax,SigmaB,Berr,CutOpt,EpsB,OFLopt,
-     +       HCRopt,ISEED4
+     +       HCRopt,ISEED4,NoOFL
       REAL*8 Bhat,Emsymin,Emsymax,Cutoff,FracMin,FracMax,Maxcatch,OFL
       REAL*8 OFLmax,Pstar,SigmaB,Berr,CutOpt
       REAL*8 EpsB(0:MaxYr)
-      INTEGER HCRopt,OFLopt,ISEED4
+      INTEGER HCRopt,OFLopt,ISEED4,NoOFL
 C      Bhat                  - Estimated biomass
 C      Emsy                  - Value of Emsy
 C      Cuttoff               - Cutoff parameter of the HG

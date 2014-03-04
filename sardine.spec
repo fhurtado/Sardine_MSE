@@ -1,17 +1,17 @@
 # Number of simulation years
-5000
+10000
 # Number of simulations
-10
+20
 # Emsy_min Emsy_max
-    0.33    0.7
+       0.3      0.7
 # FractionMin FractiomMax
-0.05  0.18
+0.05  0.15
 # Cutoff 
 150000
 # Maxcatch
 200000
-# OFL option (0=Only Emsymin; 1=Increasing Emsy; 2=Emsy is temp-dependent)
-2
+# OFL option (0=Only Emsymin; 1=Increasing Emsy; 2=Emsy is temp-dependent); Override OFL (1=True)
+2 0
 # HG option (1=HG=Emsy; 2=HG=HG no temp; 3= HG=HG with temp)
 3
 # Cutoff option

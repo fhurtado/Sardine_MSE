@@ -10,7 +10,7 @@ C
 C     Read in the specifications
       CALL ReadInBiol()
 C
-C     Read in the parameters of the control rule
+C     Read in the parameters WRIof the control rule
 C
       OPEN(UNIT=14,FILE="SUMMARY.OUT")
 C	
@@ -103,7 +103,7 @@ C
       READ(13,*) 
       READ(13,*) Maxcatch
       READ(13,*) 
-      READ(13,*) OFLopt
+      READ(13,*) OFLopt, NoOFL
       READ(13,*) 
       READ(13,*) HCRopt
       READ(13,*) 
@@ -678,6 +678,9 @@ C     Calculate the OFL
        Emsy = MIN(Emsy,OFLmax)
        OFL = Emsy*Bhat	  
       ENDIF	  
+C	  
+C     Override OFL?
+      IF (NoOFL.EQ.1) OFL = 0.95*Bhat
 C     
 C     Calculate the ABC (p*=0.40)
       ABC = Pstar*OFL
